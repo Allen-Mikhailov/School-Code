@@ -66,14 +66,43 @@ class MyPanel extends JPanel
 		g.drawOval(cx-cSize/2, cy-cSize/2, cSize, cSize);
 
 		g.drawLine(cx-cSize/2, cy, cx, cy+cSize/2);
+		g.drawLine(cx-cSize/2, cy,  (int) (cx+ .707*cSize/2), (int) (cy - .707*cSize/2));
+		g.drawLine(cx, cy+cSize/2,  (int) (cx+ .707*cSize/2), (int) (cy - .707*cSize/2));
+		g.drawOval(cx-32, cy-16, 46, 46);
 
 
 		// DRAW APCS
+		int fontSize = 20;
 
+		// A
+		g.fillRect(400, 100, 1*fontSize, 5*fontSize);
+		g.fillRect(440, 100, 1*fontSize, 5*fontSize);
+		g.fillRect(400, 100, 3*fontSize, 1*fontSize);
+		g.fillRect(400, 140, 3*fontSize, 1*fontSize);
 
+		// P
+		g.fillRect(480, 100, 1*fontSize, 5*fontSize);
+		g.fillRect(480, 100, 3*fontSize, 1*fontSize);
+		g.fillRect(480, 140, 3*fontSize, 1*fontSize);
+		g.fillRect(520, 100, 1*fontSize, 3*fontSize);
+
+		// C
+		g.fillRect(560, 100, 1*fontSize, 5*fontSize);
+		g.fillRect(560, 100, 3*fontSize, 1*fontSize);
+		g.fillRect(560, 180, 3*fontSize, 1*fontSize);
+
+		// S
+		g.fillRect(640, 100, 3*fontSize, 1*fontSize);
+		g.fillRect(640, 140, 3*fontSize, 1*fontSize);
+		g.fillRect(640, 180, 3*fontSize, 1*fontSize);
+		g.fillRect(640, 100, 1*fontSize, 3*fontSize);
+		g.fillRect(680, 140, 1*fontSize, 3*fontSize);
 
 		// DRAW PACMEN FLOWER
-		
+		g.fillArc(200, 400, 50, 50, 45, 360-90);
+		g.fillArc(170, 430, 50, 50, -45, 360-90);
+		g.fillArc(170, 370, 50, 50, 135, 360-90);
+		g.fillArc(140, 400, 50, 50, 225, 360-90);
 	}
 }
 
