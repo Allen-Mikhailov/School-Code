@@ -45,10 +45,12 @@ class MyPanel extends JPanel
 
 
 		// DRAW SPHERE
-		int things = 4;
+		int things = 6;
 		int size = 100;
 		int x = 85;
 		int y = 85;
+
+		String test = "\"<" + "wd"+">" + "dwadwd" + "<"+"wd"+">\"";
 
 		int inc = size/things;
 
