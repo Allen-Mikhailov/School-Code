@@ -26,14 +26,37 @@ class MyPanel extends JPanel
 	{
 
       // 1)  Generate a number n between 5 and 10
+      int n = 5 + (int) (Math.random()*6);
       
       // 2)  Display the n
+      g.drawChars((""+n).toCharArray(), 0, 1, 50, 50);
       
       // 3)  Display n random blue lines (initialize the x and y values of the end points
       //     using random number) using a for loop.
+      g.setColor(Color.BLUE);
+      for (int i = 0; i < n; i++)
+      {
+         g.drawLine(
+            (int) (Math.random()*800), 
+            (int)(Math.random()*600), 
+            (int)(Math.random()*800), 
+            (int)(Math.random()*600)
+         );
+      }
       
       // 4)  Display n random green lines using a while loop
-      
+      g.setColor(Color.GREEN);
+      int i = 0;
+      while (i < n)
+      {
+         g.drawLine(
+            (int) (Math.random()*800), 
+            (int)(Math.random()*600), 
+            (int)(Math.random()*800), 
+            (int)(Math.random()*600)
+         );
+         i++;
+      }
    }
 }
 
