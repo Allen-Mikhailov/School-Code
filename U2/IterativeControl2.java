@@ -29,7 +29,8 @@ class MyPanel extends JPanel
       int n = 5 + (int) (Math.random()*6);
       
       // 2)  Display the n
-      g.drawChars((""+n).toCharArray(), 0, 1, 50, 50);
+      System.out.println(n);
+      // g.drawChars((""+n).toCharArray(), 0, 2, 50, 50);
       
       // 3)  Display n random blue lines (initialize the x and y values of the end points
       //     using random number) using a for loop.
