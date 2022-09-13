@@ -6,6 +6,6 @@ public class FirstLast
 {
    public static String go( String a, String b )
 	{
-		return "";
+		return ""+a.charAt(0)+b.charAt(b.length()-1);
 	}
 }

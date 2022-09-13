@@ -8,6 +8,6 @@ public class Middle
 	//post : midddle letter of string a returned
    public static String go( String a )
 	{
-		return "";
+		return ""+a.charAt(a.length()/2);
 	}
 }
