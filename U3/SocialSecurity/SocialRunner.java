@@ -9,6 +9,7 @@ public class SocialRunner
 	public static void main( String args[] )
 	{
 		Social s = new Social();
+
 		s.setWord("456-56-234");
 		s.chopAndAdd();
 		System.out.println(s);

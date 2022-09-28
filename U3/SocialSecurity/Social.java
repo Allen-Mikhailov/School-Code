@@ -19,6 +19,7 @@ public class Social
 
 	public Social(String soc)
 	{
+		socialNum = soc;
 	}
 
 
