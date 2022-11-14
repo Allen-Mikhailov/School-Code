@@ -10,6 +10,11 @@ public class ListTotal
 {
 	public static int go( List<Integer> ray )
 	{
-		return 0;
+		int total = 0;
+		for (Integer i : ray)
+		{
+			total += i;
+		}
+		return total;
 	}
 }

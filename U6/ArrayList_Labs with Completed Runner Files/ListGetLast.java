@@ -13,6 +13,11 @@ public class ListGetLast
 	//than the last value in the list
 	public static List<Integer> go(  List<Integer> ray )
 	{
-		return null;
+		int last = ray.get(ray.size()-1);
+		List<Integer> greator = new ArrayList<Integer>();
+		for (int val : ray)
+			if (val > last)
+				greator.add(val);
+		return greator;
 	}
 }

@@ -10,6 +10,11 @@ public class ListLast
 {
 	public static boolean go( List<Integer> ray)
 	{
-		return true;
+		int last = ray.get(ray.size()-1);
+		int lastCount = 0;
+		for (int val : ray)
+			if (val == last)
+				lastCount++;
+		return lastCount > 1;
 	}
 }

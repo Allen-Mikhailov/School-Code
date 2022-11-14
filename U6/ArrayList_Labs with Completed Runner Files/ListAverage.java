@@ -10,6 +10,9 @@ public class ListAverage
 {
 	public static double go( List<Integer> ray)
 	{
-		return 0;
+		int sum = 0;
+		for (int val : ray)
+			sum += val;
+		return (double) sum / ray.size();
 	}
 }

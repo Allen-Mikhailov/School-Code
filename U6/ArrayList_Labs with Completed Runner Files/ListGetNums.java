@@ -13,6 +13,18 @@ public class ListGetNums
 	//greater than 11
 	public static List<Integer> go( List<Integer> ray )
 	{
-		return null;
+		List<Integer> greater = new ArrayList<Integer>();
+		int c = 0;
+		for (int val : ray)
+		{
+			if (val > 11)
+			{
+				c++;
+				greater.add(val);
+				if (c == 3)
+					break;
+			}
+		}
+		return greater;
 	}
 }
