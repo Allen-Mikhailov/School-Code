@@ -4,12 +4,34 @@
 //Date -
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
 
 public class OddToEvenRunner
 {
 	public static void main( String args[] )
 	{
 		ListOddToEven s = new ListOddToEven();
+
+		ArrayList<String> arrList = new ArrayList<String>();
+
+arrList.add("A");
+
+arrList.add("B");
+
+arrList.add("C");
+
+arrList.add("D");
+
+for (int i = 0; i < arrList.size(); i++)
+
+{
+
+System.out.print(arrList.remove(i));
+
+}
+
+// System.out.println(syllables);
 		
 		System.out.println( s.go( Arrays.asList(7,1,5,3,11,5,6,7,8,9,10,12345,11) ) );
 		System.out.println( s.go( Arrays.asList(11,9,8,7,6,5,4,3,2,1,-99,7) ) );

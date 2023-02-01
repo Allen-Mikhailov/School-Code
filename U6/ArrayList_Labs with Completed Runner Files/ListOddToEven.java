@@ -26,7 +26,7 @@ public class ListOddToEven
 			return -1;
 
 		int nextEven = -1;
-		for (int i = firstOdd+1; i < ray.size(); i++)
+		for (int i = ray.size()-1; i > firstOdd; i--)
 		{
 			if (ray.get(i) % 2 == 0)
 			{
@@ -35,6 +35,9 @@ public class ListOddToEven
 			}
 		}
 
+		// System.out.println(ray);
+		// System.out.println(firstOdd);
+		// System.out.println(nextEven);
 		return nextEven == -1? -1: nextEven-firstOdd;
 	}
 }
