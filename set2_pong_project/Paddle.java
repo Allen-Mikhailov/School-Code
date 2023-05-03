@@ -57,9 +57,9 @@ public class Paddle extends Block
 	// draw the ball at its new location
 	this.draw(window);
    }
-
-   //add get methods
    
-   
-   //add a toString() method
+   public String toString()
+   {
+	return super.toString() + " " + speed;
+   }
 }
